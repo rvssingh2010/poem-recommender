@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 import re
 
 # --- 1. CONFIGURATION ---
-st.set_page_config(page_title="VerseVibe", page_icon="✒️")
+st.set_page_config(page_title="Poems for you", page_icon="✒️")
 
 SHEET_ID = "1GM2BEzSOIJ2l-FHbq6mz-3-WQc7YABEmh1B37T15mHc"
 SHEET_GID = "1312416187"
