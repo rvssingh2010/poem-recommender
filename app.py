@@ -127,7 +127,7 @@ if 'shown_ids' not in st.session_state: st.session_state.shown_ids = []
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("✨ Inspire Me", use_container_width=True):
+    if st.button("Show me a poem", use_container_width=True):
         if not df.empty:
             new_poem = df.sample(1).iloc[0]
             st.session_state.current_poem = new_poem
@@ -138,7 +138,7 @@ with col1:
 
 with col2:
     disabled = st.session_state.current_poem is None
-    if st.button("🔗 More like this", disabled=disabled, use_container_width=True):
+    if st.button("Another poem like this", disabled=disabled, use_container_width=True):
         match, score = get_recommendation(
             st.session_state.current_poem, df, feature_cols,
             exclude_ids=st.session_state.shown_ids
