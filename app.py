@@ -116,7 +116,7 @@ def get_recommendation(current_row, dataframe, features, exclude_ids=[]):
     return candidates.iloc[best_idx], scores[0, best_idx]
 
 # --- 5. UI LAYOUT ---
-st.title("VerseVibe ✒️")
+st.title("Poems for you ✒️")
 st.markdown("Discover poetry based on structural personality.")
 st.divider()
 
